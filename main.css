@@ -1,0 +1,135 @@
+body {
+  color:white;
+  background-color: #111;
+}
+
+.container {
+  min-width:100%;
+  height:100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+h1 {
+  margin:.4em
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.keyButtons {
+  display:block;
+  flex-wrap: nowrap;
+  margin: 0 0 1em 0;
+}
+
+.scaleButtonsContainer {
+  display:block;
+  flex-wrap: nowrap;
+  margin: 2em 0;
+}
+
+.scaleButtons {
+  margin-bottom: 1em;
+}
+
+.keyLabel {
+  margin:1em;
+}
+
+.scaleLabel {
+  margin:0 1em;
+}
+
+.neckContainer {
+  display:block;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-left: 3px;
+}
+
+.neck {
+  display:grid;
+  grid-template-columns:5% 7.015710914788315% 6.62194931766928% 6.25028786082808% 5.89948615870186% 5.56837344321987% 5.25584465647417% 5.25584465647417% 4.96085676269128% 4.68242526719757% 4.41962093075951% 4.17156666833425% 3.93743462187986%;
+  grid-template-rows: 16.667% 16.667% 16.667% 16.667% 16.667% 16.667%;
+  min-width:66.667em;
+  margin-right:-47%;
+}
+
+.frets {
+  border-right: 5px solid gray;
+  height:18em;
+  padding:0;
+  background-color: #56473C;
+  border-top: 2px solid #2D1A0C;
+  border-bottom: 2px solid #2D1A0C;
+}
+
+.frets:nth-child(0) {
+  border-right:none;
+}
+.frets:nth-child(1) {
+  border-right:none;
+  background-color: #2D1A0C;
+}
+.frets:nth-child(4) {
+  background-color: #81756D;
+}
+.frets:nth-child(6) {
+  background-color: #81756D;
+}
+.frets:nth-child(8) {
+  background-color: #81756D;
+}
+.frets:nth-child(10) {
+  background-color: #81756D;
+}
+.frets:nth-child(13) {
+  background-color: #81756D;
+}
+
+.frets ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+.frets ul li {
+  font-size: 1.1em;
+  align-items: center;
+  align-self: center;
+  border-radius: 50%;
+  width:1.2rem;
+  height:1.2rem;
+  padding:.5em;
+}
+
+li.note {
+  color:white;
+  background-color: rgba(255,255,255,0.5);
+}
+
+@media screen and (max-width: 767px) {
+
+  .buttons {
+    margin: .5em 0 1em 0;
+  }
+
+  .neck {
+  min-width:45em;
+  margin-left: 1em;
+  }
+}
